@@ -1,98 +1,100 @@
+/* Overall NavBar container */
 .navbar {
-  background-color: black;
-  color: white;
-  padding: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
+  padding: 10px 20px;
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  width: 1280px;
 }
 
-.navbar-left {
+/* Logo section */
+.logo {
   display: flex;
   align-items: center;
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/logo2.png); /* Path to your logo */
+  background-size: cover;
+  background-position: center;
+  margin-right: 10px;
+  margin-left: 47px;
+  
 }
 
-.icon {
-  color: white;
-  font-size: 1.5rem;
+.title {
+  margin-left: 47px;
+    margin-top: -22px;
 }
 
-.navbar-title {
-  margin-left: 0.5rem;
-  font-size: 1.25rem;
+.logo a {
+  color: #fff; /* White color for the logo text */
   font-weight: bold;
-}
-
-.navbar-links {
-  display: none;
-}
-
-.navbar-links a {
-  color: white;
-  margin-left: 2rem;
+  font-size: 20px;
   text-decoration: none;
 }
 
-.navbar-links a:hover {
-  text-decoration: underline;
+/* Links section */
+.navbar div a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 16px;
+  gap: 4px;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.join-waitlist {
-  background-color: #38b2ac; /* teal-500 */
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 9999px;
-  border: none;
-  cursor: pointer;
-  display: none;
-}
-
-.join-waitlist:hover {
-  background-color: #319795; /* teal-600 */
-}
-
-.menu-toggle {
-  background: none;
-  border: none;
-  color: white;
-  cursor: pointer;
-  display: block;
-}
-
-.mobile-menu {
-  background-color: black;
-  color: white;
+.navbar div a::before {
+  content: '';
   position: absolute;
-  top: 4rem;
   left: 0;
+  bottom: 0;
   width: 100%;
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem 0;
+  height: 2px;
+  background-color: #00a2a2; /* Turquoise underline color */
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
 }
 
-.mobile-menu a {
+.navbar div a:hover {
+  color: #ccc; /* Hover color for links */
+  transform: scale(1.1); /* Slightly enlarge the text on hover */
+}
+
+.navbar div a:hover::before {
+  transform: scaleX(1); /* Expand the underline on hover */
+}
+
+/* Join Waitlist button */
+.join-btn {
+  padding: 8px 15px;
+  background-color: #00a2a2; /* Turquoise color */
   color: white;
-  margin: 0.5rem 0;
+  border-radius: 20px;
   text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  position: relative;
+  display: inline-block;
 }
 
-.mobile-menu a:hover {
-  text-decoration: underline;
+.join-btn:hover {
+  background-color: #008080; /* Darker turquoise on hover */
+  animation: bounce 0.6s ease; /* Apply bounce animation */
 }
 
-@media (min-width: 768px) {
-  .navbar-links {
-    display: flex;
+/* Bounce animation */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
   }
-
-  .join-waitlist {
-    display: block;
+  40% {
+    transform: translateY(-15px);
   }
-
-  .menu-toggle {
-    display: none;
+  60% {
+    transform: translateY(-7px);
   }
 }
