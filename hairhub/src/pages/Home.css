@@ -1,0 +1,184 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #f5f5f5;
+}
+.hero {
+  background-color: #000000;
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+}
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 46px;
+  margin-top: 56px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+.hero .btn {
+  background-color: #008080;
+  padding: 15px 30px;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+.section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+.title-1 {
+  margin-top: -39px;
+  margin-bottom: -19px;
+}
+.title-2 {
+  margin-top: -107px;
+  margin-bottom: 0px;
+}
+.title-section h2 {
+  font-size: 24px;
+  margin-bottom: 40px;
+  margin-right: 700px;
+  position: absolute;
+  color: #000;
+}
+.title-section-1 h2 {
+  font-size: 24px;
+  margin-bottom: 40px;
+  margin-top: -48px;
+  margin-right: 700px;
+  position: absolute;
+  color: #000;
+}
+.features {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+.feature {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 30%;
+}
+.feature img {
+  width: 100%;
+  border-radius: 5px;
+}
+.feature h3 {
+  font-size: 24px;
+  margin: 20px 0;
+  color: #000;
+}
+.feature p {
+  font-size: 16px;
+  color: #666;
+}
+.dtls-card {
+  margin-top: -33px;
+  margin-right: 30px;
+}
+
+.dtls-card-2 {
+  margin-top: -33px;
+  margin-right: 30px;
+}
+
+.dtls-card-3 {
+  margin-top: -33px;
+  margin-right: 30px;
+}
+.community {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.community .card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+.community .card:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.community .card img {
+  width: 40%;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+.community .card:nth-child(even) img {
+  margin-right: 0;
+  margin-left: 20px;
+}
+.community .card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.community .card p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+.community .card .btn {
+  background-color: #008080;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.horizontal-divider-1 {
+  width: 100%; /* Full width of the container */
+  height: 2px; /* Thickness of the divider */
+  background-color: #030303; /* Divider color */
+  border-radius: 2px; /* Rounded edges */
+  margin: 14px 0; /* Space around the divider */
+}
+
+.horizontal-divider-2 {
+  width: 100%; /* Full width of the container */
+  height: 2px; /* Thickness of the divider */
+  background-color: #030303; /* Divider color */
+  border-radius: 2px; /* Rounded edges */
+  margin: 63px 0; /* Space around the divider */
+}
+
+.horizontal-divider-3 {
+  width: 100%; /* Full width of the container */
+  height: 2px; /* Thickness of the divider */
+  background-color: #030303; /* Divider color */
+  border-radius: 2px; /* Rounded edges */
+  margin: 14px 0; /* Space around the divider */
+}
+
+.horizontal-divider-4 {
+  width: 100%; /* Full width of the container */
+  height: 2px; /* Thickness of the divider */
+  background-color: #030303; /* Divider color */
+  border-radius: 2px; /* Rounded edges */
+  margin: 63px 0; /* Space around the divider */
+}
+.divider-vertical {
+  top: 1067px;
+  left: 957px;
+  width: 3.3333333333333712px;
+  height: 555px;
+  background-color: #000000;
+  border-radius: 2px;
+}
